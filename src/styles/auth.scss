@@ -1,0 +1,32 @@
+
+.auth-container {
+    width: 70%;
+    margin: 4rem auto 1rem auto;
+
+    .auth-title {
+        font-size: 2.4em;
+        color: $black;
+        margin: 1rem;
+    }
+
+    .auth-form {
+        width: 60%;
+        margin: 1rem auto;
+    }
+
+    .auth-btn {
+        font-size: 0.9em;
+        width: 40%;
+        border-radius: 4px;
+        background-color: $dark-blue;
+        color: white;
+        box-shadow: 2px 2px 4px #ccc;
+        transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out, transform 300ms ease-in-out;
+
+        &:hover {
+            opacity: 0.8;
+            box-shadow: 4px 4px 6px #ccc;
+            transform: scale(1.04);
+        }
+    }
+}
