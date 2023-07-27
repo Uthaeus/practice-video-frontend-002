@@ -10,7 +10,7 @@ function MainNavigation() {
       <div className="collapse text-bg-dark" id="navbarHeader">
         <div className="container">
           <div className="row">
-            <div className="col-sm-8 col-md-7 py-4">
+            <div className="col-md-7 py-4">
               <h4>About</h4>
               <p className="text-body-secondary">
                 Add some information about the album below, the author, or any
@@ -37,9 +37,9 @@ function MainNavigation() {
                 </a>
               </div>
             </div>
-            <div className="col-sm-1 offset-sm-1 py-4">
+            <div className="col-md-2 offset-md-1 py-4">
               <h4>Explore</h4>
-              <ul className="list-unstyled mx-2">
+              <ul className="list-unstyled mx-3">
                 <li>
                   <NavLink
                     to="/"
@@ -73,9 +73,9 @@ function MainNavigation() {
                 </li>
               </ul>
             </div>
-            <div className="col-sm-1 offset-sm-1 py-4">
+            <div className="col-md-2 py-4">
               <h4>Auth</h4>
-              <ul className="list-unstyled mx-2">
+              <ul className="list-unstyled mx-3">
                 {!user ? (
                   <>
                     <li>

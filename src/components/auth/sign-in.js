@@ -9,28 +9,28 @@ function SignIn() {
     }
 
     return (
-        <div className="auth-container">
-        <h1>Sign In</h1>
+        <div className="card auth-container">
+            <h1 className="auth-title">Sign In</h1>
 
-        <form onSubmit={handleSubmit(submitHandler)} className="auth-form">
-            <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" className="form-control" {...register("email", { required: true })} />
-                {error?.email && <span className="text-danger">This field is required</span>}
-            </div>
+            <form onSubmit={handleSubmit(submitHandler)} className="auth-form">
+                <div className="form-group mb-3">
+                    <label htmlFor="email">Email</label>
+                    <input type="email" className="form-control" {...register("email", { required: true })} />
+                    {error?.email && <span className="text-danger">This field is required</span>}
+                </div>
 
-            <div className="form-group">
-                <label htmlFor="password">Password</label>
-                <input type="password" className="form-control" {...register("password", { required: true })} />
-                {error?.password && <span className="text-danger">This field is required</span>}
-            </div>
+                <div className="form-group mb-3">
+                    <label htmlFor="password">Password</label>
+                    <input type="password" className="form-control" {...register("password", { required: true })} />
+                    {error?.password && <span className="text-danger">This field is required</span>}
+                </div>
 
-            <button type="submit" className="btn btn-primary">Sign In</button>
-        </form>
+                <button type="submit" className="auth-btn mb-3">Sign In</button>
+            </form>
 
-        <Link to="/sign-up">Don't have an account? Sign Up</Link> /
-        <Link to="/"> Home</Link>
-    </div> 
+            <Link to="/sign-up">Don't have an account? Sign Up</Link>
+            <Link to="/">back to home</Link>
+        </div> 
     );
 }
 
