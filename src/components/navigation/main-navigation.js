@@ -100,11 +100,23 @@ function MainNavigation() {
                     </li>
                   </>
                 ) : (
-                  <li>
-                    <p onClick={logoutHandler} className="nav-link">
-                      Sign Out
-                    </p>
-                  </li>
+                  <>
+                    <li>
+                      <NavLink 
+                        to="/projects"
+                        className={({ isActive }) =>
+                          isActive ? "nav-link link-active" : "nav-link"
+                        }
+                      >
+                        Projects
+                      </NavLink>
+                    </li>
+                    <li>
+                      <p onClick={logoutHandler} className="nav-link">
+                        Sign Out
+                      </p>
+                    </li>
+                  </>
                 )}
               </ul>
             </div>
